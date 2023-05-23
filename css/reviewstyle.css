@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Nunito&display=swap');
+@font-face {
+    font-family: 'Iconic Bold';
+    src: url('../fonts/Iconic-Bold-trial.ttf');
+}
+@font-face {
+    font-family: 'Iconic Regular';
+    src: url('../fonts/Iconic-Regular-trial.ttf');
+}
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('../fonts/Cocogoose\ Pro\ Light-trial.ttf');
+}
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../fonts/THEBOLDFONT\ 2022.otf");
+}
+*{
+    margin: 0  ;
+}
+    body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #1384c5;
+}
+    .imagen-logo{
+        width: 150px;
+        margin: 1rem 0rem 0 3rem ; 
+        background-color: #0f0964;
+        border-radius: 50px;
+        padding: 20px;
+        padding-left: 90px;
+        padding-right: 90px;
+
+    }
+    .producto {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .producto-detalles{
+    background-color: #62c5ffe7;
+    display: flex;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 2rem;
+    box-shadow: 0px 12px 16px 18px rgba(0, 0, 0, 0.3);
+  }
+  .producto-imagen {
+    width: 300px;
+    height: 250px;
+    align-self: center;
+    margin: 2rem;
+    padding: 30px;
+    
+    background-color: #012a8194;
+    border-radius: 20px;
+  }
+  .titulo-producto{
+    text-align: center;
+    font-family: "iconic bold";
+    font-size: 6rem;
+    color: rgb(28, 238, 253);
+    
+  }
+  .description{
+    font-family: "cocogoose";
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: -20px;
+  }
+  .desc-prod{
+    font-family: 'cocogoose';
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .price{
+    font-family: 'BoldFont';
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 70px;
+  }
+  .buy{
+    display: grid;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.616);
+    text-align: center;
+    margin: 1rem;
+    font-family: "Iconic Regular";
+    font-weight: bold;
+    font-size: 6rem;
+    border-radius: 0.5rem;
+    background-color: #136fd89f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    
+  }
+  .titulo_reviews{
+    text-align: center;
+    font-family: 'Iconic Bold';
+    font-size: 5rem;
+    margin: 1rem;
+    background-color: lightblue;
+    border-radius: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .reviews{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgba(57, 201, 226, 0.308);
+  }
+  .person{
+    border-radius: 20px;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #7acbfdbd;
+    box-shadow: 0px 7px 7px 7px rgba(0, 0, 0, 0.3);
+    
+  }
+  .foto-persona{
+    width: 200px;
+    height: 200px;
+  }
+  .persona-name{
+    text-align: center;
+  }
+  .contenedor-reviews{
+    background-color: rgba(57, 201, 226, 0.637);
+    padding: 30px;
+  }
+  .nombre-persona{
+    font-family: 'Iconic Bold';
+    font-size: 3rem;
+  }
+  .review-persona{
+    font-family: 'Iconic Regular';
+    font-size: 1.2rem;
+  }

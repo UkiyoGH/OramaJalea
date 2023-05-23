@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="css/buystyle.css">
+    <script src="script/buyscript.js"></script>
+</head>
+<body>
+  <main class="pagina">
+    <div class="informacion-tarjeta">
+      <h1 class="titulo-facturacion">Datos de la tarjeta</h1>
+      <p class="texto-tarjeta">Propietario de la tarjeta:</p><br> 
+    
+      <input type="text" class="input_credit caja-tarjeta" oninput="validateLettersWithSpaces(this)"><br>
+    
+      <p class="texto-tarjeta">Numero de la tarjeta:</p><br> 
+    
+      <input type="text" class="inputField caja-tarjeta" maxlength="19" oninput="agregarBarras(this)"><br>
+    
+      <p class="texto-tarjeta">Fecha de vencimiento:</p><br> 
+    
+      <input type="text" class="inputField caja-tarjeta-fecha" maxlength="5" oninput="addSlashAndCheck(this)">
+    
+      <div id="expirationMessage" class="error-tarjeta"></div>
+    
+      <p class="texto-tarjeta">CVV</p><br> 
+    
+      <input class="caja-tarjeta-cvv"maxlength="3" type="number" placeholder="Numeros atras de la tarjeta" oninput="limitarLongitud(this)"><br>
+    
+      <p class="texto-tarjeta">Posee algun cupón?</p>
+    
+      <input type="text" class="inputField caja-tarjeta" oninput="cupon(this)" maxlength="11" placeholder="XXX-XXX-XX-X"/><br>
+    
+      
+    </div>
+    <div class="precio-total">
+      <h2 class="title-price">Subtotal del producto</h2>
+      <h4 class="infor">Precio original: ₡2000</h4>
+      <h4 class="infor">IVA (13%): ₡260</h4>
+      <h4 class="info"></h4>
+      <h3 class="info-final">Total: ₡2,260</h3>
+      <a href="#" class="buy_button">Confirmar la compra</a>
+    </div>
+  </main>
+
+  
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Nunito&display=swap');
+@font-face {
+    font-family: 'Iconic Bold';
+    src: url('../fonts/Iconic-Bold-trial.ttf');
+}
+@font-face {
+    font-family: 'Iconic Regular';
+    src: url('../fonts/Iconic-Regular-trial.ttf');
+}
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../fonts/LEMONMILK-Medium.otf');
+}
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../fonts/THEBOLDFONT\ 2022.otf");
+}
+*{
+    margin: 0;
+}
+html{
+    background-color: #0e1d3a;
+}
+.pagina{
+    display: flex;
+}
+.informacion-tarjeta{
+    display: grid;
+}
+.titulo-facturacion{
+    font-family: 'iconic bold';
+    margin: 2rem 0rem 0rem 3rem;
+    font-size: 4rem;
+    color: #0077B6;
+    background-color: #CAF0F8;
+    padding: 20px;
+    border-radius: 20px;
+}
+.texto-tarjeta{
+    font-family: 'cocogoose';
+    margin: 1rem 0 0 3rem;
+    font-size: 1.5rem;
+    color: #69bce9;
+    padding: 5px;
+    font-weight: bold;
+}
+.error-tarjeta{
+    font-family: 'Iconic Regular';
+    margin: 1rem 0 0 3rem;
+    font-size: 1.5rem;
+    color: #69bce9;
+    padding: 5px;
+    font-weight: bold;
+}
+.caja-tarjeta{
+    width: 300px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 1rem 0 0 3rem;
+}
+.caja-tarjeta-fecha{
+    width: 300px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 0 0 3rem;
+}
+.caja-tarjeta-cvv{
+    width: 300px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 0 0 3rem;
+}
+.precio-total{
+    display: grid;
+    
+    width: fit-content;
+    height: 200px;
+    margin: 2rem auto auto auto;
+    position: fixed;
+    left: 25cm;
+}
+.title-price{
+    font-family: "Iconic Bold";
+    font-size: 4rem;
+    color: #0077B6;
+    background-color: #CAF0F8;
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+.texto-tarjeta{
+    font-family: 'Iconic Regular';
+}
+.info, .infor, .info-final{
+    font-family: 'Lemon Milk';
+    font-size: 1.5rem;
+    color: #E7ECEF;
+}
+.buy_button{
+    text-decoration: none;
+    color: #CAF0F8;
+    font-family: 'BoldFont';
+    margin: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #0077B6;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/data.css">
+    <script src="script/datos.js"></script>
+    <title>Base de Datos</title>
+</head>
+<body>
+    <header class="header-datos">
+      <a href="index.html" class="button_logo"><img src="images/orama.png" alt="" class="imagen-logo"></a>
+      <h1 class="title-base">Base de datos de productos</h1>
+    </header>
+    <button id="botonMostrar">Agregar Producto</button>
+    <div id="contenedor"></div>
+    <script>
+        function eliminarDiv(div) {
+          div.parentNode.removeChild(div);
+        }
+      
+        document.getElementById("botonMostrar").addEventListener("click", function() {
+          var div = document.createElement("div");
+          div.classList.add("product");
+          div.innerHTML = `
+            <img src="images/amarilla.png" alt="" class="imagen">
+            <p class="name">Jalea Amarilla</p>
+            <button class="nada">Eliminar</button>
+          `;
+      
+          var contenedor = document.getElementById("contenedor");
+          contenedor.appendChild(div);
+      
+          var botonEliminar = div.querySelector(".nada");
+          botonEliminar.addEventListener("click", function() {
+            eliminarDiv(div);
+          });
+        });
+      </script>
+    <div class="productos">
+        <div class="product">
+          <img src="images/dark_blue_jelly-removebg-preview.png" alt="" class="imagen">
+          <p class="name">Jalea Azul</p>
+          <button class="nada">Eliminar</button>
+        </div>
+        <div class="product">
+          <img src="images/blue_jelly.png" alt="" class="imagen">
+          <p class="name">Jalea Celeste</p>
+          <button class="nada">Eliminar</button>
+        </div>
+        <div class="product">
+          <img src="images/red_jelly.png" alt="" class="imagen">
+          <p class="name">Jalea Roja</p>
+          <button class="nada">Eliminar</button>
+        </div>
+      </div>
+      
+      <script>
+        var botonesEliminar = document.querySelectorAll(".nada");
+        botonesEliminar.forEach(function(boton) {
+          boton.addEventListener("click", function() {
+            var div = this.closest(".product");
+            if (div) {
+              div.parentNode.removeChild(div);
+            }
+          });
+        });
+      </script>
+    
+</body>
+</html>
